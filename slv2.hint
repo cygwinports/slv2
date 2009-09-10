@@ -1,0 +1,5 @@
+category: Audio
+requires: libgcc1 libslv2_9
+sdesc: "LV2 plugin tools"
+ldesc: "SLV2 is a library for LV2 hosts intended to make using LV2 
+Plugins as simple as possible (without sacrificing capabilities)."

@@ -1,0 +1,6 @@
+category: Audio
+requires: libslv2_9 libraptor-devel librdf-devel lv2core
+external-source: slv2
+sdesc: "LV2 plugin host library (development)"
+ldesc: "SLV2 is a library for LV2 hosts intended to make using LV2 
+Plugins as simple as possible (without sacrificing capabilities)."

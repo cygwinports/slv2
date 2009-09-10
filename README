@@ -1,0 +1,54 @@
+slv2
+------------------------------------------
+SLV2 is a library for LV2 hosts intended to make using LV2 Plugins as 
+simple as possible (without sacrificing capabilities).
+
+Runtime requirements:
+  cygwin-1.7.0-60
+  libgcc1-4.3.2-2
+  libraptor1-1.4.18-10
+  librdf0-1.0.9-1
+
+Build requirements:
+(besides corresponding -devel packages)
+  binutils-2.19.51-1
+  cygport-0.9.9-1
+  gcc4-core-4.3.2-2
+  pkg-config-0.23b-10
+  python-2.5.4-10
+  waf-1.5.8.6447-1
+
+Canonical website:
+  http://drobilla.net/software/slv2/
+
+Canonical download:
+  http://download.drobilla.net/
+
+-------------------------------------------
+
+Build instructions:
+  unpack slv2-0.6.6-X-src.tar.bz2
+    if you use setup to install this src package, it will be
+	 unpacked under /usr/src automatically
+  cd /usr/src
+  cygport ./slv2-0.6.6-X.cygport all
+
+This will create:
+  /usr/src/libslv2-devel-0.6.6-X.tar.bz2
+  /usr/src/libslv2_9-0.6.6-X.tar.bz2
+  /usr/src/slv2-0.6.6-X-src.tar.bz2
+  /usr/src/slv2-0.6.6-X.tar.bz2
+
+For a list of files included in the binary package, run from the 
+command-line: 'cygcheck -cd <PKG>'.
+
+-------------------------------------------
+
+Port Notes:
+
+----- version 0.6.6-1 -----
+Initial release for Cygwin 1.7.
+
+
+Cygwin port maintained by:
+http://sourceware.org/cygwinports/

@@ -1,0 +1,18 @@
+--- origsrc/slv2-0.6.6/wscript	2009-05-25 22:44:51.000000000 -0500
++++ src/slv2-0.6.6/wscript	2009-09-10 02:09:42.474138000 -0500
+@@ -88,14 +88,13 @@ def build(bld):
+ 	'''
+ 
+ 	# Library
+-	obj = bld.new_task_gen('cc', 'shlib')
++	obj = bld.new_task_gen('cc', 'shlib', 'implib')
+ 	obj.export_incdirs = ['.']
+ 	obj.source       = lib_source
+ 	obj.includes     = ['.', './src']
+ 	obj.name         = 'libslv2'
+ 	obj.target       = 'slv2'
+ 	obj.vnum         = SLV2_LIB_VERSION
+-	obj.install_path = '${LIBDIR}'
+ 	autowaf.use_lib(bld, obj, 'REDLAND LV2CORE')
+ 
+ 	# Static library (for unit test code coverage)
