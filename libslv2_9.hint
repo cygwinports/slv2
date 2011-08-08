@@ -1,5 +1,5 @@
 category: Audio
-requires: libgcc1 libraptor1 librdf0 lv2core
+requires: libraptor2_0 librdf0 lv2core
 external-source: slv2
 sdesc: "LV2 plugin host library (runtime)"
 ldesc: "SLV2 is a library for LV2 hosts intended to make using LV2 
