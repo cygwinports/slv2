@@ -2,7 +2,7 @@ inherit waf
 
 NAME="slv2"
 VERSION=0.6.6
-RELEASE=3
+RELEASE=4
 CATEGORY="Audio"
 SUMMARY="LV2 plugin tools"
 DESCRIPTION="SLV2 is a library for LV2 hosts intended to make using LV2
