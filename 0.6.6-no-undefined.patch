@@ -1,0 +1,19 @@
+--- origsrc/slv2-0.6.6/wscript	2015-11-26 00:32:58.730718400 -0600
++++ src/slv2-0.6.6/wscript	2015-11-26 00:39:41.821404400 -0600
+@@ -49,6 +49,7 @@ def configure(conf):
+ 	autowaf.configure(conf)
+ 	autowaf.check_tool(conf, 'compiler_cc')
+ 	autowaf.check_pkg(conf, 'lv2core', uselib_store='LV2CORE', atleast_version='1.0', mandatory=True)
++	autowaf.check_pkg(conf, 'raptor2', uselib_store='RAPTOR2', atleast_version='2.0', mandatory=True)
+ 	autowaf.check_pkg(conf, 'redland', uselib_store='REDLAND', atleast_version='1.0.6', mandatory=True)
+ 	autowaf.check_pkg(conf, 'jack', uselib_store='JACK', atleast_version='0.107.0', mandatory=False)
+ 	conf.env.append_value('CCFLAGS', '-std=c99')
+@@ -96,7 +97,7 @@ def build(bld):
+ 	obj.target       = 'slv2'
+ 	obj.vnum         = SLV2_LIB_VERSION
+ 	obj.install_path = '${LIBDIR}'
+-	autowaf.use_lib(bld, obj, 'REDLAND LV2CORE')
++	autowaf.use_lib(bld, obj, 'REDLAND RAPTOR2 LV2CORE')
+ 
+ 	# Static library (for unit test code coverage)
+ 	if bld.env['BUILD_TESTS']:
